@@ -1,0 +1,40 @@
+.btn {
+  margin-bottom: 30px;
+  background-color: #212529;
+  border: solid black 1px;
+}
+
+.country-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.country-content > div {
+  padding-top: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 190px;
+  overflow: hidden;
+}
+
+.country-content h5 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 220%;
+}
+.country-content span {
+  font-weight: normal;
+}
+
+.country-flag {
+  width: 38%;
+  padding-left: 40px;
+}
+.country-data1 {
+  width: 35%;
+  margin-top: 115px;
+}
+.country-data2 {
+  width: 25%;
+  margin-top: 115px;
+}

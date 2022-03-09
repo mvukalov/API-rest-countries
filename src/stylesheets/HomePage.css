@@ -1,0 +1,54 @@
+.site {
+  background-color: rgb(33, 45, 55);
+  color: white;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.inactive {
+  color: white;
+}
+.navbar-nav .nav-link.inactive:hover {
+  color: #9b9d97;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+.nav-title {
+  color: white;
+  margin-left: 20px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-title:hover {
+  color: #9b9d97;
+  margin-left: 20px;
+}
+
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 320px;
+  margin-bottom: 320px;
+}
+
+.table {
+  padding-top: 100px;
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+td {
+  width: 25%;
+}
