@@ -53,9 +53,3 @@
 td {
   width: 25%;
 }
-
-@media (max-width: 800px) {
-  .table {
-    flex-direction: column;
-  }
-}

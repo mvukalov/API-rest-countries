@@ -41,10 +41,10 @@ const Country = () => {
               <h5>
                 Official Name: <span>{data.altSpellings[1]}</span>
               </h5>
+
               <h5>
                 Native Name: <span>{data.nativeName}</span>
               </h5>
-
               <h5>
                 First Language: <span>{data.languages[0].name}</span>
               </h5>
