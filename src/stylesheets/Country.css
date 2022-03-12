@@ -9,12 +9,23 @@
   padding-bottom: 10px;
 }
 
-.country-content > div {
+.country-content {
   padding-top: 130px;
-  display: inline-block;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
   padding-bottom: 190px;
-  overflow: hidden;
+}
+
+.country-flag {
+  padding-left: 40px;
+}
+.country-data1 {
+  margin-top: 115px;
+}
+.country-data2 {
+  margin-top: 115px;
+  padding-right: 40px;
 }
 
 .country-content h5 {
@@ -26,15 +37,8 @@
   font-weight: normal;
 }
 
-.country-flag {
-  width: 38%;
-  padding-left: 40px;
-}
-.country-data1 {
-  width: 35%;
-  margin-top: 115px;
-}
-.country-data2 {
-  width: 25%;
-  margin-top: 115px;
+@media (max-width: 800px) {
+  .country-content {
+    flex-direction: column;
+  }
 }

@@ -32,8 +32,8 @@
 }
 
 .nav-title:hover {
-  color: #9b9d97;
   margin-left: 20px;
+  color: #9b9d97;
 }
 
 .spinner-border {
@@ -49,8 +49,13 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
-  margin-bottom: 0px;
 }
 td {
   width: 25%;
+}
+
+@media (max-width: 800px) {
+  .table {
+    flex-direction: column;
+  }
 }
