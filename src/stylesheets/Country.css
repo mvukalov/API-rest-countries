@@ -20,7 +20,7 @@ body {
 }
 
 .country-flag {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .country-data1 {
   margin-top: 115px;
@@ -28,7 +28,6 @@ body {
 }
 .country-data2 {
   margin-top: 115px;
-
   flex: 1;
 }
 
@@ -48,23 +47,32 @@ body {
   }
   .country-data2 {
     margin-top: 0px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   .country-data1 {
     margin-top: 0px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 }
 
 @media (max-width: 550px) {
+  .country-content {
+    gap: 10px;
+  }
   .flag-img {
-    width: 450px;
+    width: 420px;
     height: 250px;
+    padding-right: 30px;
   }
 }
 
-@media (max-width: 470px) {
+.country-content h5 {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media (max-width: 440px) {
   .flag-img {
     width: 350px;
     height: 220px;
