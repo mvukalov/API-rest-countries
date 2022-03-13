@@ -31,6 +31,7 @@ const Country = () => {
               </Link>
               <h2 class="country-title">{data.name}</h2>
               <img
+                className="flag-img"
                 src={data.flags.png}
                 width="500px"
                 height="280px"

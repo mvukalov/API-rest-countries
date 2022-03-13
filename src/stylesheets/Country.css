@@ -56,3 +56,17 @@ body {
     margin-left: 40px;
   }
 }
+
+@media (max-width: 550px) {
+  .flag-img {
+    width: 450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 470px) {
+  .flag-img {
+    width: 350px;
+    height: 220px;
+  }
+}
