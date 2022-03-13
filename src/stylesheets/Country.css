@@ -41,17 +41,18 @@ body {
   font-weight: normal;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .country-content {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
   }
   .country-data2 {
     margin-top: 0px;
+    margin-left: 40px;
   }
 
   .country-data1 {
     margin-top: 0px;
+    margin-left: 40px;
   }
 }
