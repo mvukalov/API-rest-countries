@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(33, 45, 55);
+}
 .btn {
   margin-bottom: 30px;
   background-color: #212529;
@@ -10,11 +13,10 @@
 }
 
 .country-content {
-  padding-top: 130px;
+  margin-top: 130px;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
   display: flex;
-  padding-bottom: 190px;
 }
 
 .country-flag {
@@ -22,10 +24,12 @@
 }
 .country-data1 {
   margin-top: 115px;
+  flex: 1;
 }
 .country-data2 {
   margin-top: 115px;
-  padding-right: 40px;
+
+  flex: 1;
 }
 
 .country-content h5 {
@@ -40,5 +44,14 @@
 @media (max-width: 800px) {
   .country-content {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .country-data2 {
+    margin-top: 0px;
+  }
+
+  .country-data1 {
+    margin-top: 0px;
   }
 }
