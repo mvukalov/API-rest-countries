@@ -53,3 +53,9 @@
 td {
   width: 25%;
 }
+
+@media (max-width: 500px) {
+  .table {
+    margin-left: 0px;
+  }
+}
