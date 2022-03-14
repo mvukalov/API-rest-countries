@@ -1,4 +1,4 @@
-.site {
+body {
   background-color: rgb(33, 45, 55);
   color: white;
 }
@@ -56,6 +56,6 @@ td {
 
 @media (max-width: 500px) {
   .table {
-    margin-left: 0px;
+    margin-left: 0px;git
   }
 }

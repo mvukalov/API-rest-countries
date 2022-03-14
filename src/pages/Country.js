@@ -10,12 +10,17 @@ const Country = () => {
 
   useEffect(() => {
     const fetchCountryData = async () => {
-      const res = await fetch(`https://restcountries.com/v2/name/${name}`);
-      const country = await res.json();
-      setCountry(country);
-      setLoading(true);
-      console.log(country);
+      try {
+        const res = await fetch(`https://restcountries.com/v2/name/${name}`);
+        const country = await res.json();
+        setCountry(country);
+        setLoading(true);
+        console.log(country);
+      } catch (err) {
+        console.log(err);
+      }
     };
+
     fetchCountryData();
   }, []);
 
@@ -24,7 +29,7 @@ const Country = () => {
       <Header />
       {loading ? (
         country.map((data) => (
-          <div className="country-content" key={data.name}>
+          <div className="country-content" key={data.numnericCode}>
             <div className="country-flag">
               <Link to="/" className="btn btn-dark">
                 <i className="fas fa-arrow-left"></i> Back Home

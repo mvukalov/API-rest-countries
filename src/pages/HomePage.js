@@ -10,12 +10,15 @@ const Home = () => {
 
   useEffect(() => {
     const fetchCountries = async () => {
-      const res = await fetch(`https://restcountries.com/v2/all`);
-      const countries = await res.json();
-      setCountries(countries);
-      setLoading(true);
+      try {
+        const res = await fetch(`https://restcountries.com/v2/all`);
+        const countries = await res.json();
+        setCountries(countries);
+        setLoading(true);
+      } catch (err) {
+        console.log(err);
+      }
     };
-
     fetchCountries();
   }, []);
 
