@@ -32,7 +32,7 @@ const Country = () => {
           <div className="country-content" key={data.numnericCode}>
             <div className="country-flag">
               <Link to="/" className="btn btn-dark">
-                <i className="fas fa-arrow-left"></i> Back Home
+                Back Home
               </Link>
               <h2 class="country-title">{data.name}</h2>
               <img

@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <Navbar bg="dark" variant="dark" fixed="top" expand="sm" collapseOnSelect>
         <Link to="/">
-          <img src="/images/world.png" className="logo"></img>
+          <img src="/images/world.png" className="logo" alt=""></img>
         </Link>
 
         <Navbar.Brand>
