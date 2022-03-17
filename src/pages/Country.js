@@ -34,7 +34,7 @@ const Country = () => {
               <Link to="/" className="btn btn-dark">
                 Back Home
               </Link>
-              <h2 class="country-title">{data.name}</h2>
+              <h2 className="country-title">{data.name}</h2>
               <img
                 className="flag-img"
                 src={data.flags.png}
