@@ -32,13 +32,13 @@ body {
 
 .country-content {
   margin-top: 110px;
-  width: min(1200px, 92%);
+  width: min(1200px, 95%);
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   align-items: flex-end;
-  gap: 60px;
+  gap: 32px;
 }
 
 .country-flag {
@@ -90,10 +90,19 @@ body {
 @media (max-width: 900px) {
   .country-content {
     gap: 24px;
-    margin-top: 96px;
+    margin-top: 74px;
     width: 92%;
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  a.inactive.nav-link {
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+
+  .btn {
+    margin-bottom: 16px;
   }
 
   .country-title {
@@ -114,6 +123,10 @@ body {
     min-width: 0;
   }
 
+  .country-content h5 {
+    font-size: 18px;
+  }
+
   .country-content h5 span {
     font-weight: 400;
     line-height: normal;
@@ -127,7 +140,7 @@ body {
 
 @media (max-width: 420px) {
   .country-content h5 {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: normal;
   }
 }

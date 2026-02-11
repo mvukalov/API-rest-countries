@@ -1,8 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <div>
       <Navbar bg="dark" variant="dark" fixed="top" expand="sm" collapseOnSelect>
@@ -18,9 +20,11 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse className="navbar-nav1">
           <Nav className="navbar-nav">
-            <Nav.Link className="inactive" href="/">
-              HomePage
-            </Nav.Link>
+            {location.pathname !== "/" && (
+              <Nav.Link as={Link} to="/">
+                HomePage
+              </Nav.Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

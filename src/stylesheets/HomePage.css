@@ -39,6 +39,10 @@ body {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.navbar-dark .navbar-toggler {
+  margin-right: 12px;
+}
+
 .logo {
   height: 44px;
   width: 44px;
@@ -96,15 +100,19 @@ body {
 .table a {
   word-break: break-word;
 }
+.table > :not(:first-child) {
+  border-top: 2px rgba(0, 0, 0, 0.35);
+}
 
 @media (max-width: 768px) {
   .navbar-nav {
-    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
     font-size: 16px;
   }
 
   .table {
-    margin-top: 14px;
+    margin-top: 58px;
     width: 100%;
     border-radius: 0;
   }

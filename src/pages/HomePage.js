@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const res = await fetch("https://restcountries.com/v3.1/all?fields=name,population,capital,languages");
+        const res = await fetch("https://restcountries.com/v3.1/all?fields=name,cca3,population,capital,languages");
         const text = await res.text();
         console.log("STATUS:", res.status);
         console.log("BODY:", text);
@@ -44,10 +44,7 @@ const Home = () => {
               {countries.map((country) => (
                 <tr key={country.name.common}>
                   <td>
-                    <Link
-                      style={{ textDecoration: "none", color: "#1594D0" }}
-                      to={`/countries/${encodeURIComponent(country.name.common)}`}
-                    >
+                    <Link style={{ textDecoration: "none", color: "#1594D0" }} to={`/countries/${country.cca3}`}>
                       {country.name.common}
                     </Link>
                   </td>
