@@ -1,62 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   background-color: rgb(33, 45, 55);
   color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  line-height: 1.5;
 }
+
 .navbar {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
 }
+
 .navbar-nav {
   margin-left: auto;
-  margin-right: 30px;
-  font-size: 20px;
-  font-weight: bold;
+  margin-right: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 8px;
 }
+
 .navbar-nav .nav-link.inactive {
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
 }
+
 .navbar-nav .nav-link.inactive:hover {
-  color: #9b9d97;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
-  margin-left: 20px;
+  height: 44px;
+  width: 44px;
+  margin-left: 16px;
 }
-.nav-title {
-  color: white;
-  margin-left: 20px;
 
+.nav-title {
+  color: rgba(255, 255, 255, 0.95);
+  margin-left: 12px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 0.2px;
 }
 
 .nav-title:hover {
-  margin-left: 20px;
-  color: #9b9d97;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .spinner-border {
-  width: 5rem;
-  height: 5rem;
-  margin-top: 320px;
-  margin-bottom: 320px;
+  width: 4rem;
+  height: 4rem;
+  margin: 28vh auto;
+  display: block;
 }
 
 .table {
-  margin-top: 110px;
-  max-width: 96%;
+  margin-top: 96px;
+  width: min(1100px, 96%);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-}
-td {
-  width: 25%;
+  margin-bottom: 28px;
+  border-radius: 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 500px) {
+.table table {
+  margin: 0;
+  min-width: 720px;
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.table td {
+  width: auto;
+}
+
+.table a {
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-right: 12px;
+    font-size: 16px;
+  }
+
   .table {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 14px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 12px;
+  }
+
+  .nav-title {
+    margin-left: 10px;
+    font-size: 16px;
   }
 }

@@ -35,13 +35,7 @@ const Country = () => {
                 Back Home
               </Link>
               <h2 className="country-title">{data.name}</h2>
-              <img
-                className="flag-img"
-                src={data.flags.png}
-                width="500px"
-                height="280px"
-                alt={data.name}
-              />
+              <img className="flag-img" src={data.flags.png} width="500px" height="280px" alt={data.name} />
             </div>
             <div className="country-data1">
               <h5>
