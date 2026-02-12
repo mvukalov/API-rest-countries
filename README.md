@@ -106,7 +106,7 @@ https://restcountries.com/v3.1/
 
 ## 👤 Author
 
-Martin Vukalovic
+Martin Vukalović
 
 ---
 
