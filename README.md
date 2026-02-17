@@ -1,4 +1,4 @@
-# 🌍 API Rest Countries
+# 🌍 countries-api-app
 
 A responsive React application that displays country information using the REST Countries API (v3.1).
 
